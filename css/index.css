@@ -1,0 +1,105 @@
+.foto-home {
+    height: 100px;
+}
+
+.saudacao p {
+    color: #99A;
+    line-height: 1;
+}
+
+.saudacao-inicio {
+    color: rgb(5, 5, 83);
+}
+
+.saudacao-ultima-linha {
+    text-align: right;
+    display: block;
+}
+
+.saudacao strong {
+    color: #000;
+}
+
+.saudacao em {
+    color: #da276e;
+}
+
+.botao-index {
+    position: relative;
+    background-color: #a03131;
+    border: .1em solid black;
+    display: inline-block;
+    color: #FFF;
+    padding: .1em;
+    left: 50%;
+    transform: translateX(-50%);  /* deixa alinhado*/
+    text-align: center;
+    padding-bottom: 0,5em;  /* tamanho*/
+    width: 40ch;
+    line-height: 2em;
+}
+
+.secao-inicio h2 {
+    text-transform: uppercase;
+}
+
+.trabalhos {
+    background-color: rgb(132, 16, 136);
+    border-top: 10px solid #000;
+    border-bottom: 10px solid rgb(124, 60, 60);
+    padding-bottom: 3em;
+    width: 100%;
+}
+
+.trabalhos h2 {
+    color: rgb(252, 249, 249);
+}
+
+.trabalhos ul {
+    overflow: hidden;
+
+  border: .5em solid black;
+}
+
+.trabalhos li {
+    float: left;
+    width: 33.333%;
+}
+
+.trabalhos img {
+    width: 100%;
+    display: block;
+}
+
+.blog {
+    background-color: rgb(104, 89, 89);
+    color: #FFF;
+    border-bottom: .5em solid #b8527b;
+   
+
+}
+
+.blog li a {
+    color: rgb(227, 229, 235);
+    padding: .5em;
+    display: block;
+}
+
+footer {
+    background-color: rgba(143, 43, 43, 0.692);
+    color: rgb(20, 4, 4);
+}
+
+footer a {
+    color: rgb(48, 21, 167);
+}
+
+main {
+    width: 100%;
+    padding-bottom: 10em;
+    float: none;
+}
+.blog small {
+    position: relative;
+    top: -2em;
+}
