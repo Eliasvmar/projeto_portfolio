@@ -61,21 +61,21 @@ header {
 
 .design {
     top: 32%;
-    left: 55%;
+    left: 65%;
 }
 
-.inicio-post {
-    background-color: rgb(48, 154, 196);
+.blog.inicio-post {
+    background-color: rgb(10, 25, 31);
     position: absolute;
     top: 4em;
-    right: 4em;
+    right: 6em;
     height: 8em;
     padding: 1, 5em;
     left: 30%;
-    color: #000;
+    color: rgb(32, 17, 17);
 }
 
-.meio-post {
+.blog.meio-post {
     background-color: rgb(153, 76, 168);
     position: absolute;
     top: 6em;
@@ -84,7 +84,7 @@ header {
     padding: 0, 1em;
 }
 
-.fim-post {
+.blog.fim-post {
     background-color: rgb(98, 45, 109);
     position: absolute;
     top: 8em;
@@ -94,16 +94,19 @@ header {
 }
 
 .foto-home {
-    height: 100px;
+    height: 200px;
 }
 
 .saudacao p {
+    font-size: 1.5em;
     color: #99A;
     line-height: 1;
+    padding: 2em;
 }
 
 .saudacao-inicio {
-    color: rgb(5, 5, 83);
+    color: rgb(3, 3, 37);
+    font-size: 3em;
 }
 
 .saudacao-ultima-linha {
@@ -112,7 +115,13 @@ header {
 }
 
 .saudacao strong {
+    font-size: 2em;
     color: #000;
+}
+
+.saudacao em {
+    color: #851944;
+    font-size: 4em;
 }
 
 .saudacao em {
@@ -141,7 +150,7 @@ header {
 }
 
 .trabalhos {
-    background-color: rgb(132, 16, 136);
+    background-color: rgb(172, 29, 177);
     border-top: 10px solid #000;
     border-bottom: 10px solid rgb(124, 60, 60);
     padding-bottom: 3em;
@@ -149,7 +158,8 @@ header {
 }
 
 .trabalhos h2 {
-    color: rgb(252, 249, 249);
+    color: rgb(231, 212, 212);
+    font-size: 2em;
 }
 
 .trabalhos ul {
@@ -168,14 +178,14 @@ header {
 }
 
 .blog {
-    background-color: rgb(104, 89, 89);
+    background-color: rgb(75, 112, 70);
     color: #FFF;
     border-bottom: .5em solid #b8527b;
     position: relative;
 }
 
 .blog li a {
-    color: rgb(227, 229, 235);
+    color: rgb(66, 93, 173);
     padding: .5em;
     display: block;
     position: relative;
