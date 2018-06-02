@@ -1,3 +1,26 @@
+.twitter1 {
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    background-color: #462222;
+    border: .1em solid black;
+    display: inline-block;
+    color: #FFF;
+    padding: .2em;
+    left: 50%;
+    transform: translateX(50%);
+    transform: translateZ(-10%);
+    /* deixa alinhado*/
+    text-align: center;
+    padding-bottom: 0, 8em;
+    /* tamanho*/
+    width: 40ch;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+
 header {
     position: relative;
 }
@@ -12,56 +35,78 @@ header {
 .eficiencia {
     top: 20%;
     left: 75%;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
 }
 
 .boas-praticas {
     top: 70%;
     left: 20%;
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
 }
 
 .codigo-limpo {
     top: 45%;
     left: 10%;
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
 }
 
 .css3 {
     top: 50%;
     left: 30%;
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
 }
 
 .html5 {
     top: 40%;
     left: 80%;
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
 }
 
 .javascript {
     top: 10%;
     left: 60%;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
 }
 
 .acessibilidade {
     top: 30%;
     left: 25%;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
 }
 
 .responsivo {
     top: 15%;
     left: 15%;
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
 }
 
 .otimizacoes {
     top: 60%;
     left: 70%;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
 }
 
 .agilidade {
     top: 10%;
     left: 30%;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
 }
 
 .design {
     top: 32%;
     left: 65%;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
 }
 
 .blog.inicio-post {
@@ -95,6 +140,9 @@ header {
 
 .foto-home {
     height: 200px;
+    border-radius: 0 50%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
 }
 
 .saudacao p {
@@ -122,12 +170,16 @@ header {
 .saudacao em {
     color: #851944;
     font-size: 4em;
+    transform: rotate(-5deg) skew(10deg);
+    /*Repare que usamos o display: inline-block para que a transformação funcione e fazemos primeiro o skew para depois fazer o rotate. Se fizermos na ordem inversa, ficaremos com um resultado estranho, apesar de a diferença ser sutil.*/
+    display: inline-block;
 }
 
+
+}
 .saudacao em {
     color: #da276e;
 }
-
 .botao-index {
     position: relative;
     background-color: #a03131;
@@ -138,17 +190,23 @@ header {
     left: 50%;
     transform: translateX(-50%);
     /* deixa alinhado*/
+    
     text-align: center;
     padding-bottom: 0, 5em;
     /* tamanho*/
+    
     width: 40ch;
     line-height: 2em;
+    -webkit-depth: 10em;
+    /* coloca opçao 3d no botao  ficticio*/
+    
+    -moz-depth: 10em;
 }
 
+}
 .secao-inicio h2 {
     text-transform: uppercase;
 }
-
 .trabalhos {
     background-color: rgb(172, 29, 177);
     border-top: 10px solid #000;
@@ -156,56 +214,46 @@ header {
     padding-bottom: 3em;
     width: 100%;
 }
-
 .trabalhos h2 {
     color: rgb(231, 212, 212);
     font-size: 2em;
 }
-
 .trabalhos ul {
     overflow: hidden;
     border: .5em solid black;
 }
-
 .trabalhos li {
     float: left;
     width: 33.333%;
 }
-
 .trabalhos img {
     width: 100%;
     display: block;
 }
-
 .blog {
     background-color: rgb(75, 112, 70);
     color: #FFF;
     border-bottom: .5em solid #b8527b;
     position: relative;
 }
-
 .blog li a {
     color: rgb(66, 93, 173);
     padding: .5em;
     display: block;
     position: relative;
 }
-
 footer {
     background-color: rgba(143, 43, 43, 0.692);
     color: rgb(20, 4, 4);
 }
-
 footer a {
     color: rgb(48, 21, 167);
 }
-
 main {
     width: 100%;
     padding-bottom: 10em;
     float: none;
 }
-
 .blog small {
     position: relative;
     top: -2em;
