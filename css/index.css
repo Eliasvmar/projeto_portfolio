@@ -30,11 +30,16 @@ header {
     position: relative;
 }
 
+.palavras-home,
+.titulo-principal {
+    transform-style: preserve-3d;
+}
+
 .palavra-home {
     position: absolute;
     font-family: "Shadows Into Light", cursive;
     font-weight: bold;
-    color: rgb(12, 8, 10);
+    color: rgb(7, 2, 2);
 }
 
 .palavras-home li {
@@ -278,8 +283,6 @@ header {
     
     -moz-depth: 10em;
 }
-
-}
 .secao-inicio h2 {
     text-transform: uppercase;
 }
@@ -333,4 +336,15 @@ main {
 .blog small {
     position: relative;
     top: -2em;
+}
+html,
+body {
+    height: 100%;
+    /*altura */
+    
+    overflow-x: hidden;
+}
+body {
+    perspective: 6px;
+    perspective-origin: 50% 160px;
 }
