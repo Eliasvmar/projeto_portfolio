@@ -11,8 +11,8 @@
 
 .portfolio img {
     width: 100%;
-    box-shadow: 0 0 4px #000;
+    box-shadow: 3px 3px black, 5px 5px orange, 0 0 8px #000;
 }
 
 
-/*nao ha deslocamento nem na horizontal nem na vertical só o tamanho de 4px*/
+/* box-shadow: 0 0 4px #000;;  nao ha deslocamento nem na horizontal nem na vertical só o tamanho de 4px*/
