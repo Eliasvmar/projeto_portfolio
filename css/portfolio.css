@@ -11,4 +11,8 @@
 
 .portfolio img {
     width: 100%;
+    box-shadow: 0 0 4px #000;
 }
+
+
+/*nao ha deslocamento nem na horizontal nem na vertical só o tamanho de 4px*/
