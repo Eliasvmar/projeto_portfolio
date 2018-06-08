@@ -34,6 +34,9 @@ header {
 .titulo-principal {
     transform-style: preserve-3d;
     color: rgba(255, 127, 127, 0.5);
+    background-image: linear-gradient(to bottom, #F00, #888 80%, #000);
+    background-size: 100% 200px;
+    /*100% da largura do background e 200 pixeis de altura.*/
     /* cor para a opacidade do titulo principal que deve ser 0 ao 1..Como queremos o elemento semitransparente, e não apenas uma parte dele (o fundo, o texto, a borda etc), usamos a propriedade opacity, que recebe valores de 0 (totalmente transparente) a 1 (totalmente opaco. Assim, a declaração mais correta seria:
 
 opacity: 0.6;*/
