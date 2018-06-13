@@ -140,3 +140,17 @@ main {
     right: 0;
     height: 300px;
 }
+
+main a:hover,
+main a:focus,
+footer a:hover,
+footer a:focus {
+    color: rgb(97, 27, 143);
+    /*esta parte coloca... cor nos links.. destaque nos links*/
+}
+
+.navegacao-site a:hover,
+.navegacao-site a:focus {
+    text-shadow: 0 0 2px pink;
+    /*esta parte coloca destaque  ...cor nos links*/
+}
