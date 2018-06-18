@@ -209,6 +209,39 @@ opacity: 0.6;*/
     transform: rotate(-5deg);
 }*/
 
+.inicio-post {
+    display: none;
+}
+
+.meio-post {
+    display: none;
+}
+
+.blog a:hover+.inicio-post,
+.blog a:focus+.inicio-post {
+    display: block;
+}
+
+.blog a:hover+.meio-post,
+.blog a:focus+.meio-post {
+    display: block;
+}
+
+.fim-post {
+    display: none;
+}
+
+.blog a:hover+.fim-post,
+.blog a:focus+.fim-post {
+    display: block;
+}
+
+.blog a:hover,
+.blog a:focus {
+    background-color: #F2FFFC;
+    color: #F26;
+}
+
 .blog.inicio-post {
     background-color: rgb(10, 25, 31);
     position: absolute;
@@ -369,9 +402,9 @@ opacity: 0.6;*/
 }
 
 footer {
-    background-color: rgba(6, 7, 7, 0.692);
+    background-color: rgba(6, 9, 7, 0.692);
     color: rgb(20, 4, 4);
-    opacity: 0.6;
+    opacity: 0.9;
 }
 
 footer a {
