@@ -198,10 +198,10 @@
         
         .icones-redes-sociais a:hover::before,
         .icones-redes-sociais a:focus::before {
-            content: 'ola td bem';
+            content: '';
             width: 1em;
             height: 1em;
-            background-color: black;
+            background-color: rgb(255, 10, 10);
             position: absolute;
             bottom: 0;
             left: 0;
