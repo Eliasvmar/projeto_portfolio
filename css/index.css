@@ -9,7 +9,8 @@
     border: .25em solid black;
     color: #FFF;
     padding: 1em 0;
-    transform: translate(6.5765em, -2.4745em) rotate(45deg);
+    /* transform: translate(6.5765em, -2.4745em) rotate(45deg);*/
+    transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);
     /*Com um pouco de trigonometria, chegamos nas seguintes fórmulas para o quanto temos que transladar na horizontal e na vertical.
     Na horizontal: cos(45) * (altura - largura) + largura
     Na vertical: -1 * sen(45) * altura    
@@ -437,7 +438,7 @@ body {
 .Caixa-de-diálogo {
     box-sizing: border-box;
     display: inline-block;
-    width: 40%;
+    width: calc(50% - 2em);
     background-color: #FFF;
     position: fixed;
     top: 50%;
