@@ -1,3 +1,8 @@
+h1 {
+    -webkit-animation: aparece 2s;
+    animation: aparece 2s;
+}
+
 .citacao-bio {
     background-color: #D9E5E3;
     border: 10px solid #C2CCCA;
@@ -5,6 +10,65 @@
     margin: 20px 40px;
     width: 250px;
     box-sizing: border-box;
+    transition: transform 2s linear, box-shadow 1s ease-in-out;
+    transition-delay: 1s, 0s;
+    position: relative;
+    -webkit-animation: quica 1s infinite;
+    animation: quica 1s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+
+.citacao-bio {
+    transition: box-shadow 1s, transform 1s;
+    transition-delay: 0s, 1s;
+}
+
+.citacao-bio {
+    transition: box-shadow 1s, transform 1s;
+    /* vale quando o usuário parou de interagir */
+    transition-delay: 1s, 0s;
+}
+
+.citacao-bio:hover,
+.citacao-bio:focus {
+    /* vale quando o usuário começou a interagir */
+    transition-delay: 0s, 1s;
+}
+
+@-webkit-keyframes quica {
+    from {
+        top: 2;
+    }
+    to {
+        top: 1 em;
+    }
+}
+
+@keyframes quica {
+    from {
+        top: 1;
+    }
+    to {
+        top: 1 em;
+    }
+}
+
+@-webkit-keyframes quica {
+    from {
+        top: 0;
+    }
+    90% {
+        transform: rotate(-2deg);
+    }
+    95% {
+        transform: rotate(2deg);
+    }
+    to {
+        top: 1 em;
+    }
 }
 
 .citacao-bio:nth-of-type(even) {
@@ -23,6 +87,8 @@
 .citacao-bio:hover,
 .citacao-bio:focus {
     box-shadow: 0 0 0 99999px rgba(0, 0, 0, .8);
+    -webkit-animation-play-state: start;
+    animation-play-state: start;
 }
 
 
@@ -54,12 +120,8 @@
     content: '“';
     position: absolute;
     font-size: 10em;
-    color: #bbb;
-    line-height: .8;
-}
-
-.citacao-bio>p {
-    position: relative;
+    color: rgb(216, 133, 133);
+    line-height: .5;
 }
 
 th {

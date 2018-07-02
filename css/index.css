@@ -25,6 +25,9 @@
     text-decoration: none;
     font-size: 1.2em;
     font-family: "Open Sans Condensad", sans-serif;
+    animation: aparece 10s;
+    animation-delay: 20s;
+    animation-fill-mode: backwards;
 }
 
 header {
@@ -304,20 +307,34 @@ opacity: 0.6;*/
 }
 
 .saudacao em {
-    color: #851944;
+    color: #b82761;
     font-size: 4em;
     transform: rotate(-5deg) skew(10deg);
     /*Repare que usamos o display: inline-block para que a transformação funcione e fazemos primeiro o skew para depois fazer o rotate. Se fizermos na ordem inversa, ficaremos com um resultado estranho, apesar de a diferença ser sutil.*/
     display: inline-block;
+    animation: flutua 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    position: relative;
 }
 
-.saudacao em {
-    color: #da276e;
+@keyframes flutua {
+    from {
+        top: -20px;
+    }
+    to {
+        top: 30px;
+    }
+}
+
+.saudacao:hover em {
+    animation-play-state: paused;
 }
 
 .botao-index {
     position: relative;
-    background-color: #a03131;
+    background-color: #C54974;
+    ;
     border: .1em solid black;
     display: inline-block;
     color: #FFF;
@@ -334,6 +351,23 @@ opacity: 0.6;*/
     /* coloca opçao 3d no botao  ficticio*/
     -moz-depth: 10em;
     box-shadow: 0 0 2em #000, inset 0 0 .5em #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.botao-index {
+    background-color: green;
+    transition: box-shadow 1s, background-color 2s;
+}
+
+.botao-index:hover {
+    background-color: red;
+    box-shadow: 0 0 3px white;
+}
+
+.botao-index:focus,
+.botao-index:hover {
+    box-shadow: 0 0 1em #FA9;
 }
 
 .secao-inicio h2 {
@@ -359,13 +393,15 @@ opacity: 0.6;*/
 }
 
 .trabalhos ul {
-    overflow: hidden;
+    /*  overflow: hidden;*/
     border: .5em solid black;
+    display: flex;
 }
 
 .trabalhos li {
-    float: left;
-    width: 33.333%;
+    /* float: left;*/
+    /* width: 33.333%;*/
+    flex: 1;
 }
 
 .trabalhos img {
