@@ -30,6 +30,11 @@
     animation-fill-mode: backwards;
 }
 
+body {
+    /* sobrescreve o site.css */
+    display: block;
+}
+
 header {
     position: relative;
 }
@@ -134,84 +139,6 @@ opacity: 0.6;*/
     transform: translate(-50%, -50%) rotate(10deg) translateZ(2px) scale(0.45);
     opacity: .3;
 }
-
-
-/*.eficiencia {
-    top: 20%;
-    left: 75%;
-    -webkit-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-}
-
-.boas-praticas {
-    top: 70%;
-    left: 20%;
-    -webkit-transform: rotate(10deg);
-    transform: rotate(10deg);
-}
-
-.codigo-limpo {
-    top: 45%;
-    left: 10%;
-    -webkit-transform: rotate(10deg);
-    transform: rotate(10deg);
-}
-
-.css3 {
-    top: 50%;
-    left: 30%;
-    -webkit-transform: rotate(5deg);
-    transform: rotate(5deg);
-}
-
-.html5 {
-    top: 40%;
-    left: 80%;
-    -webkit-transform: rotate(10deg);
-    transform: rotate(10deg);
-}
-
-.javascript {
-    top: 10%;
-    left: 60%;
-    -webkit-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-}
-
-.acessibilidade {
-    top: 30%;
-    left: 25%;
-    -webkit-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-}
-
-.responsivo {
-    top: 15%;
-    left: 15%;
-    -webkit-transform: rotate(10deg);
-    transform: rotate(10deg);
-}
-
-.otimizacoes {
-    top: 60%;
-    left: 70%;
-    -webkit-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-}
-
-.agilidade {
-    top: 10%;
-    left: 30%;
-    -webkit-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-}
-
-.design {
-    top: 32%;
-    left: 65%;
-    -webkit-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-}*/
 
 .inicio-post {
     display: none;
@@ -387,14 +314,27 @@ opacity: 0.6;*/
     background-attachment: fixed;
 }
 
+.trabalhos li:first-child {
+    order: 2;
+    transform: scale(1.2);
+}
+
+.trabalhos li:nth-child(2) {
+    order: 1;
+}
+
+.trabalhos li:last-child {
+    order: 3;
+}
+
 .trabalhos h2 {
     color: rgb(231, 212, 212);
     font-size: 2em;
 }
 
 .trabalhos ul {
-    /*  overflow: hidden;*/
-    border: .5em solid black;
+    /*  overflow: hidden;
+    border: .5em solid black;*/
     display: flex;
 }
 
@@ -402,6 +342,10 @@ opacity: 0.6;*/
     /* float: left;*/
     /* width: 33.333%;*/
     flex: 1;
+}
+
+.trabalhos li {
+    border: .5em solid #000;
 }
 
 .trabalhos img {
